@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 0.5fr repeat(10, 1fr) 0.5fr;
+    grid-template-rows: auto auto 4fr auto;
+    height: 100vh;
+}
+.header{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+.header h1{
+    padding-left: 10px;
+    margin-bottom: 5px;
+
+}
+.header hr{
+    padding: 0;
+    margin: 0;
+}
+.sidebar{
+    padding-left: 10px;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: green;
+}
+.table-container{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 12;
+    /* background-color: red; */
+} 
+.content{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 12;
+    /* background-color: yellow; */
+
+}
+.footer{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    /* background-color: blue; */
+
+}
+.footer p{
+    padding-left: 10px;
+}
+.footer hr{
+    padding: 0;
+    margin: 0;
+}
+.footer-flex{
+    display: flex;
+    justify-content: center;
+}
+.table-flex{
+    display: flex;
+    justify-content: start; /* Horizontally center the table */
+    align-items: start; /* Vertically center the table, if there's enough vertical space */
+    width: 100%;
+}
+.table-flex table{
+    
+}
+.sidebar-flex{
+    display: flex;
+    flex-direction: column;
+}
+.sidebar-flex p, h3{
+    margin: 0;
+}
+
+th, td {
+    padding-top: 0;
+    padding-bottom: 5px;
+    padding-left: 0;
+    padding-right: 40px;
+  }
