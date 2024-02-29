@@ -16,7 +16,8 @@ body{
 .header h1{
     padding-left: 10px;
     margin-bottom: 5px;
-
+    font-size: xx-large;
+    font-weight: bold;
 }
 .header hr{
     padding: 0;
@@ -28,7 +29,7 @@ body{
     grid-row-end: 5;
     grid-column-start: 1;
     grid-column-end: 2;
-    background-color: green;
+    /* background-color: green; */
 }
 .table-container{
     grid-row-start: 2;
